@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #6dd5ed,
+        #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    width: 415px;
+}
+
+.title {
+    font-size: 12rem;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 10rem;
+    }
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-family: Poppins;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #024277;
+    opacity: 0.9;
+}
+
+.todos {
+    font-size: 2rem;
+    font-family: Poppins;
+    background-color: #1ac2e7;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todos li {
+    border-top: 1px solid #1f1f1f;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-align: end;
+    font-family: Poppins;
+}
